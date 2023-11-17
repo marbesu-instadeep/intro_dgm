@@ -1,20 +1,15 @@
 # %%
 import os
-import numpy as np
+
 import matplotlib.pyplot as plt
+import numpy as np
 import torch
-from sklearn import datasets
-from torch.utils.data import Dataset, DataLoader
 import torch.nn as nn
 import torch.nn.functional as F
-
-import pandas as pd
-import rdkit
+from pytorch_model_summary import summary
 from rdkit import Chem
 from rdkit.Chem import Draw
-import deepchem
-
-from pytorch_model_summary import summary
+from torch.utils.data import DataLoader, Dataset
 
 # %% [markdown]
 # **DISCLAIMER**
